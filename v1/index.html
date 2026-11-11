@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><style>x-dc{display:block}.wd{display:inline-block;white-space:nowrap}html,body{margin:0}</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><style>x-dc{display:block}html,body{margin:0}</style>
 <title>romanaig.com — Home v1</title>
 
 </head>
@@ -17,7 +17,7 @@
 --t:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;--x:'Courier Prime','Courier New',ui-monospace,monospace}
 *{box-sizing:border-box}
 body{margin:0;background:var(--papel)}
-.pg{background:var(--papel);color:var(--tinta);font-family:var(--x);font-size:17px;line-height:1.6;overflow:hidden}
+.pg{background:var(--papel);color:var(--tinta);font-family:var(--x);font-size:17px;line-height:1.6;overflow:hidden;overflow:clip}
 .pg a{color:inherit}
 .t{font-family:var(--t);font-weight:900;text-transform:uppercase;margin:0}
 .pg a:focus-visible,.pg button:focus-visible{outline:2px solid var(--tinta);outline-offset:3px;border-radius:2px}
@@ -27,7 +27,7 @@ body{margin:0;background:var(--papel)}
 .ht{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle,rgba(27,26,24,.32) .9px,transparent 1.3px) 0 0/4px 4px;mix-blend-mode:multiply}
 .bw{filter:grayscale(1) contrast(1.4) brightness(.95)}
 .hero{position:relative;height:940px;display:flex;flex-direction:column;justify-content:space-between;padding:32px 48px 40px;isolation:isolate}
-.hero .bg{position:absolute;inset:0;z-index:-3;background-image:url(../assets/hero.webp);filter:saturate(1.15) contrast(1.15) brightness(.85)}
+.hero .bg{position:absolute;inset:0;z-index:-3;background-image:url(../assets/v1/hero_poster.jpg);filter:saturate(1.15) contrast(1.15) brightness(.85)}
 .hero .bgv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:saturate(1.15) contrast(1.15) brightness(.85)}
 .hero .ht{z-index:-1}
 .hero .shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(to bottom,rgba(27,26,24,.55),transparent 28%,transparent 45%,rgba(27,26,24,.82))}
@@ -46,8 +46,8 @@ body{margin:0;background:var(--papel)}
 .btn{transition:background-color .16s steps(2),color .16s steps(2)}
 .btn:hover,.btn:active{background:var(--ink);color:var(--on)!important}
 .sec{padding:128px 48px 0;max-width:1680px;margin:0 auto;position:relative;isolation:isolate}
-.h2{font-size:71px;line-height:.9;position:relative;display:inline-block;padding-bottom:20px}
-.h2 .ul{position:absolute;left:-2%;bottom:-14px;width:104%;height:40px;background:url(../assets/traco-sublinhado.webp) center/100% 100% no-repeat}
+.h2{font-size:71px;line-height:1.1;position:relative;display:inline-block;padding-bottom:20px}
+.h2 .ul{position:absolute;left:-2%;bottom:-14px;width:104%;height:40px;background:url(../assets/v1/traco-sublinhado.webp) center/100% 100% no-repeat}
 .work{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;row-gap:32px;margin-top:64px}
 .card{position:relative;display:block;text-decoration:none;color:var(--papel);filter:drop-shadow(3px 4px 0 rgba(27,26,24,.22))}
 .cut{position:absolute;inset:0;overflow:hidden;background:var(--xerox);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:100% 100%;mask-size:100% 100%}
@@ -56,15 +56,13 @@ body{margin:0;background:var(--papel)}
 .cut .gr{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(27,26,24,.78),rgba(27,26,24,0) 42%)}
 .cut .ht{mix-blend-mode:multiply}
 .card .txt{position:absolute;left:0;top:0;padding:36px 0 0 36px;max-width:80%}
-.card h3{display:inline-block;font-size:40px;line-height:.95;background:var(--recorte);color:var(--tinta);padding:8px 14px 5px}
-.card .meta{display:table;margin:6px 0 0;font-size:15px;line-height:1.5;background:var(--tinta);color:var(--papel);padding:1px 10px}
+.card h3{display:inline-block;font-size:40px;line-height:.95;background:var(--ink);color:var(--on);padding:8px 14px 5px;transition:background-color .16s steps(2),color .16s steps(2)}
+.card:hover h3,.card:focus-visible h3,.card:active h3{background:var(--recorte);color:var(--tinta)}
 .card .go{position:absolute;right:36px;bottom:32px;background:var(--recorte);color:var(--tinta);padding:6px 12px;font-size:15px;line-height:1.5;border:2px solid var(--tinta)}
 .card:hover .ink,.card:focus-visible .ink,.card:active .ink{opacity:1}
-.still:hover .ink,.still:active .ink{opacity:1}
-.still .cut .ink{position:absolute;inset:0;background:var(--ink);mix-blend-mode:multiply;opacity:0}
 .card:hover .go,.card:focus-visible .go,.card:active .go{background:var(--ink);color:var(--on)}
 .ink,.go{transition:opacity .16s steps(2),background-color .16s steps(2),color .16s steps(2)}
-.k1{--ink:#7A0A14;--on:#E9E7E1}.k2{--ink:#4A1BA6;--on:#E9E7E1}.k3{--ink:#1BE07D;--on:#1B1A18}.k4{--ink:#F0387A;--on:#1B1A18}.k5{--ink:#FCD400;--on:#1B1A18}
+.k1{--ink:#FF4B1F;--on:#1B1A18}.k2{--ink:#4A1BA6;--on:#E9E7E1}.k3{--ink:#1BE07D;--on:#1B1A18}.k4{--ink:#F0387A;--on:#1B1A18}.k5{--ink:#FCD400;--on:#1B1A18}
 .hv{transition:background-color .16s steps(2),color .16s steps(2)}
 .hv:hover,.hv:active{background-color:var(--ink)!important;color:var(--on)!important}
 .hv.hv-t{display:inline;padding:0 .1em;margin:0 -.1em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
@@ -78,25 +76,43 @@ body{margin:0;background:var(--papel)}
 @keyframes ras{0%{clip-path:inset(0 100% 0 0);opacity:1}40%{clip-path:inset(0 0 0 0);opacity:1}82%{clip-path:inset(0 0 0 0);opacity:1}83%{clip-path:inset(0 0 0 0);opacity:0}100%{clip-path:inset(0 100% 0 0);opacity:0}
 }
 .ras{animation:ras 3.6s steps(9,end) infinite}
-.st-c{-webkit-mask-image:url(../assets/traco-circulo.webp);mask-image:url(../assets/traco-circulo.webp)}.st-r{-webkit-mask-image:url(../assets/traco-risco.webp);mask-image:url(../assets/traco-risco.webp)}.st-s{-webkit-mask-image:url(../assets/traco-sublinhado.webp);mask-image:url(../assets/traco-sublinhado.webp)}
+.st-c{-webkit-mask-image:url(../assets/v1/traco-circulo.webp);mask-image:url(../assets/v1/traco-circulo.webp)}.st-r{-webkit-mask-image:url(../assets/v1/traco-risco.webp);mask-image:url(../assets/v1/traco-risco.webp)}.st-s{-webkit-mask-image:url(../assets/v1/traco-sublinhado.webp);mask-image:url(../assets/v1/traco-sublinhado.webp)}
 .piece{position:absolute;z-index:3;filter:drop-shadow(3px 4px 0 rgba(27,26,24,.22));pointer-events:none}
 .sc{position:absolute;z-index:-1;background:var(--ink);pointer-events:none;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:100% 100%;mask-size:100% 100%}
 .sc.dots{background:radial-gradient(circle,var(--ink) 2.6px,transparent 3.2px) 0 0/12px 12px}
+.sc.o{border-radius:50%}
+.sc.ring{background:none;border:var(--bw,7px) solid var(--ink);border-radius:50%}
+.sc.semi{border-radius:999px 999px 0 0}
+.sc.tri{clip-path:polygon(50% 0,100% 100%,0 100%)}
+.sc.plus{clip-path:polygon(35% 0,65% 0,65% 35%,100% 35%,100% 65%,65% 65%,65% 100%,35% 100%,35% 65%,0 65%,0 35%,35% 35%)}
+.sc.up{z-index:4}
+.mo{display:none}
+.px1{--d:36px}.px2{--d:14px}.px3{--d:-84px}
+@supports (animation-timeline:view()){@media (prefers-reduced-motion:no-preference){
+.px{animation:px linear both;animation-timeline:view();animation-range:cover}
+@keyframes px{from{translate:0 calc(var(--d)*-1)}to{translate:0 var(--d)}}
+}}
 
 .c1{grid-column:1/9;grid-row:1;height:660px;z-index:2}
 .c2{grid-column:8/13;grid-row:1;height:560px;margin-top:200px;z-index:3}
 .c3{grid-column:4/13;grid-row:2;height:560px;margin-top:-16px;z-index:1}
 .c4{grid-column:1/7;grid-row:3;height:540px;margin-top:24px}
 .c5{grid-column:8/13;grid-row:3;height:700px;margin-top:-64px;z-index:2}
-.m-h{-webkit-mask-image:url(../assets/rasgo-horizontal.webp);mask-image:url(../assets/rasgo-horizontal.webp)}.m-v{-webkit-mask-image:url(../assets/rasgo-vertical.webp);mask-image:url(../assets/rasgo-vertical.webp)}.m-d{-webkit-mask-image:url(../assets/rasgo-diagonal.webp);mask-image:url(../assets/rasgo-diagonal.webp)}.m-c{-webkit-mask-image:url(../assets/rasgo-canto.webp);mask-image:url(../assets/rasgo-canto.webp)}.m-t{-webkit-mask-image:url(../assets/rasgo-tira.webp);mask-image:url(../assets/rasgo-tira.webp)}
+.m-h{-webkit-mask-image:url(../assets/v1/rasgo-horizontal.webp);mask-image:url(../assets/v1/rasgo-horizontal.webp)}.m-v{-webkit-mask-image:url(../assets/v1/rasgo-vertical.webp);mask-image:url(../assets/v1/rasgo-vertical.webp)}.m-d{-webkit-mask-image:url(../assets/v1/rasgo-diagonal.webp);mask-image:url(../assets/v1/rasgo-diagonal.webp)}.m-c{-webkit-mask-image:url(../assets/v1/rasgo-canto.webp);mask-image:url(../assets/v1/rasgo-canto.webp)}.m-t{-webkit-mask-image:url(../assets/v1/rasgo-tira.webp);mask-image:url(../assets/v1/rasgo-tira.webp)}
 .band{position:relative;isolation:isolate;margin-top:160px;padding:128px 48px 128px}
-.band .lead{font-size:71px;line-height:.9;max-width:1100px;text-wrap:balance}
-.stills{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;max-width:1584px;margin:96px auto 0;align-items:start}
-.still{position:relative;filter:drop-shadow(3px 4px 0 rgba(0,0,0,.55))}
-.still .cut .photo{filter:grayscale(1) contrast(1.35) brightness(1.05)}
-.s1{grid-column:1/6;height:440px}
-.s2{grid-column:6/10;height:320px;margin-top:96px;transform:rotate(2.5deg)}
-.s3{grid-column:10/13;height:480px;margin-top:-24px}
+.band .lead{font-size:71px;line-height:1.15;max-width:1100px;text-wrap:balance}
+.reel{position:relative;margin:88px -48px 0;padding:32px 0 56px;overflow:hidden}
+.reel .track{display:flex;align-items:flex-start;width:max-content;animation:reel 80s linear infinite}
+.reel:hover .track{animation-play-state:paused}
+@keyframes reel{to{transform:translateX(-50%)}}
+.fr{position:relative;flex:none;width:calc(340px*var(--s,1));height:calc(191px*var(--s,1));margin:var(--mt,0) 30px 0 0;rotate:var(--rt,0deg);filter:drop-shadow(3px 4px 0 rgba(0,0,0,.55));transition:scale .16s steps(2)}
+.fr:nth-child(3n+1){--s:1.12;--rt:-1.5deg}
+.fr:nth-child(3n+2){--s:.86;--rt:2deg;--mt:44px}
+.fr:nth-child(3n){--s:1;--rt:-.6deg;--mt:14px}
+.fr .cut .photo{inset:0;background:url(../assets/v1/frames_d.webp) no-repeat;background-size:500% 300%;background-position:calc(var(--c)*25%) calc(var(--r)*50%);filter:grayscale(1) contrast(1.3) brightness(1.05);transition:filter .16s steps(2)}
+.fr:hover,.fr:active{scale:1.05;z-index:2}
+.fr:hover .cut .photo,.fr:active .cut .photo{filter:none}
+.hint{display:none;color:var(--tinta)}
 .logos{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;margin-top:64px}
 .logo{background:var(--recorte);box-shadow:var(--sombra);min-height:120px;display:flex;align-items:center;justify-content:center;padding:24px;font-family:var(--t);font-weight:900;font-size:40px;line-height:.95;text-transform:uppercase;text-align:center}
 .logo.ag{background:var(--tinta);color:var(--papel)}
@@ -109,20 +125,21 @@ body{margin:0;background:var(--papel)}
 .quote figcaption{margin-top:24px;font-size:15px;line-height:1.5;color:var(--suave)}
 .quote figcaption b{display:block;font-family:var(--t);font-weight:900;font-size:40px;line-height:.95;text-transform:uppercase;color:var(--tinta)}
 .cta{padding:192px 48px 160px;max-width:1680px;margin:0 auto;position:relative;isolation:isolate}
-.cta .big{font-size:clamp(96px,12vw,172px);line-height:.86}
+.cta .big{font-size:clamp(96px,12vw,172px);line-height:1.12}
 .cta .row{margin-top:64px;display:flex;align-items:center;gap:32px;flex-wrap:wrap}
 .cta .circ{position:relative;display:inline-block;padding:20px 28px}
-.cta .circ::before{content:"";position:absolute;inset:-18px -30px;background:url(../assets/traco-circulo.webp) center/100% 100% no-repeat;pointer-events:none}
+.cta .circ::before{content:"";position:absolute;inset:-18px -30px;background:url(../assets/v1/traco-circulo.webp) center/100% 100% no-repeat;pointer-events:none}
 .foot{position:relative;isolation:isolate;padding:64px 48px 48px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:48px;align-items:flex-end}
 .foot ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 32px;max-width:760px}
 .foot a{text-decoration:none;min-height:44px;display:inline-flex;align-items:center;font-size:22px;line-height:1.45}
 .foot a.small{font-size:15px;color:var(--xerox)}
 .foot .copy{font-size:15px;color:#A9A69F;line-height:1.5}
-.foot .mail{font-family:var(--t);font-weight:900;text-transform:uppercase;font-size:71px;line-height:.9;text-decoration:none}
-@media (prefers-reduced-motion:reduce){.ink,.go,.hv,.btn,.play i{transition:none}.nm:hover .lt,.nm:active .lt{animation:none;color:var(--c)}.ras{animation:none}
+.foot .mail{font-family:var(--t);font-weight:900;text-transform:uppercase;font-size:71px;line-height:1.1;text-decoration:none}
+@media (prefers-reduced-motion:reduce){.ink,.go,.hv,.btn,.play i{transition:none}.nm:hover .lt,.nm:active .lt{animation:none;color:var(--c)}.ras{animation:none}.card h3,.fr,.fr .cut .photo{transition:none}.reel{overflow-x:auto}.reel .track{animation:none}.reel .dup{display:none}
 }
 @media (max-width:820px){
 .work .sc{display:none}
+.work .sc.mo{display:block}
 .band .st-c{display:none}
 .sc{max-width:60%}
 .hero{height:780px;padding:16px 24px 24px}
@@ -140,11 +157,17 @@ body{margin:0;background:var(--papel)}
 .card .go{right:20px;bottom:20px}
 .band{margin-top:96px;padding:96px 24px}
 .band .lead{font-size:44px}
-.stills{display:flex;flex-direction:column;align-items:stretch;gap:24px;margin-top:48px}
+.hint{display:inline-block;margin-top:24px}
+.reel{margin:24px -24px 0;padding:16px 0 40px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.reel::-webkit-scrollbar{display:none}
+.reel .track{animation:none;padding:0 24px}
+.reel .dup{display:none}
+.fr{width:calc(200px*var(--s,1));height:calc(356px*var(--s,1));margin-right:16px;scroll-snap-align:center}
+.fr .cut .photo{background-image:url(../assets/v1/frames_m.webp);filter:none}
+@supports (animation-timeline:view()){@media (prefers-reduced-motion:no-preference){.fr .cut{animation:pop linear both;animation-timeline:view(inline);animation-range:cover}
+@keyframes pop{0%{scale:.88;opacity:.65}50%{scale:1;opacity:1}100%{scale:.88;opacity:.65}}}}
 .ras{width:220px!important;height:36px!important}
 .piece{display:none}
-.still{height:320px;margin:0!important}
-.s2{transform:rotate(2.5deg)}
 .logos{grid-template-columns:repeat(2,1fr);gap:16px;margin-top:48px}
 .logo{font-size:30px;min-height:96px;padding:16px}
 .quotes{grid-template-columns:1fr;gap:32px;margin-top:48px}
@@ -153,21 +176,23 @@ body{margin:0;background:var(--papel)}
 .foot{padding:48px 24px 32px;flex-direction:column;align-items:flex-start}
 .foot .mail{font-size:44px;word-break:break-word}
 }
-.p-neve{background-image:url(../assets/neve.webp)}
-.p-desenrola{background-image:url(../assets/desenrola.webp)}
-.p-pova{background-image:url(../assets/pova.webp)}
-.p-gloob{background-image:url(../assets/gloob.webp)}
-.p-social{background-image:url(../assets/social.webp)}
-.p-s1{background-image:url(../assets/still1.webp)}
-.p-s2{background-image:url(../assets/still2.webp)}
-.p-s3{background-image:url(../assets/still3.webp)}
+.p-neve{background-image:url(../assets/v1/neve.webp)}
+.p-desenrola{background-image:url(../assets/v1/desenrola.webp)}
+.p-pova{background-image:url(../assets/v1/pova.webp)}
+.p-gloob{background-image:url(../assets/v1/gloob.webp)}
+.p-social{background-image:url(../assets/v1/social.webp)}
 
+.g-estrela{-webkit-mask-image:url(../assets/v1/estrela.webp);mask-image:url(../assets/v1/estrela.webp)}.g-brilho{-webkit-mask-image:url(../assets/v1/brilho.webp);mask-image:url(../assets/v1/brilho.webp)}.g-asterisco{-webkit-mask-image:url(../assets/v1/asterisco.webp);mask-image:url(../assets/v1/asterisco.webp)}.g-zigzag{-webkit-mask-image:url(../assets/v1/zigzag.webp);mask-image:url(../assets/v1/zigzag.webp)}.g-explosao{-webkit-mask-image:url(../assets/v1/explosao.webp);mask-image:url(../assets/v1/explosao.webp)}.g-sol{-webkit-mask-image:url(../assets/v1/sol.webp);mask-image:url(../assets/v1/sol.webp)}.g-espiral{-webkit-mask-image:url(../assets/v1/espiral.webp);mask-image:url(../assets/v1/espiral.webp)}.g-raios{-webkit-mask-image:url(../assets/v1/raios.webp);mask-image:url(../assets/v1/raios.webp)}.g-flor{-webkit-mask-image:url(../assets/v1/flor.webp);mask-image:url(../assets/v1/flor.webp)}.g-coracao{-webkit-mask-image:url(../assets/v1/coracao.webp);mask-image:url(../assets/v1/coracao.webp)}.g-ondas{-webkit-mask-image:url(../assets/v1/ondas.webp);mask-image:url(../assets/v1/ondas.webp)}.g-nuvem{-webkit-mask-image:url(../assets/v1/nuvem.webp);mask-image:url(../assets/v1/nuvem.webp)}.g-x{-webkit-mask-image:url(../assets/v1/x.webp);mask-image:url(../assets/v1/x.webp)}
+.cut .photo .cv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sc.fg{z-index:6}
+.wd{display:inline-block;white-space:nowrap}
+.px4{--d:-96px}.px5{--d:48px}
 </style>
 </helmet>
 <div class="pg">
 
 <header class="hero toner">
-<div class="bg"></div><video class="bgv" src="../assets/hero_loop.mp4" poster="../assets/hero.webp" autoplay muted loop playsinline aria-hidden="true"></video><div class="ht"></div><div class="shade"></div>
+<div class="bg"></div><video class="bgv" src="../assets/v1/hero_reel.mp4" poster="../assets/v1/hero_poster.jpg" autoplay muted loop playsinline aria-hidden="true"></video><div class="ht"></div><div class="shade"></div>
 <nav class="nav" aria-label="Main"><a class="hv k5" style="padding:0 10px" href="#work">Work</a><a class="hv k4" style="padding:0 10px" href="#">About</a><a class="hv k3" style="padding:0 10px" href="#" aria-label="Português">EN / PT</a></nav>
 <div>
 <h1 class="t name" aria-label="Igor Romana"><span class="nm" aria-hidden="true"><span class="wd"><span class="lt" style="--i:0;--c:#F0387A">I</span><span class="lt" style="--i:1;--c:#FCD400">g</span><span class="lt" style="--i:2;--c:#1BE07D">o</span><span class="lt" style="--i:3;--c:#F0387A">r</span></span> <span class="wd"><span class="lt" style="--i:4;--c:#FCD400">R</span><span class="lt" style="--i:5;--c:#1BE07D">o</span><span class="lt" style="--i:6;--c:#F0387A">m</span><span class="lt" style="--i:7;--c:#FCD400">a</span><span class="lt" style="--i:8;--c:#1BE07D">n</span><span class="lt" style="--i:9;--c:#F0387A">a</span></span></span></h1>
@@ -185,49 +210,50 @@ body{margin:0;background:var(--papel)}
 
 <main>
 <section class="sec" id="work" aria-labelledby="work-h">
-<span class="sc st-r" aria-hidden="true" style="--ink:#F0387A;left:56px;top:-22px;width:240px;height:46px;transform:rotate(-4deg)"></span>
+<span class="sc g-estrela px px3" aria-hidden="true" style="--ink:#FF7A1A;left:62%;top:150px;width:66px;height:66px;transform:rotate(12deg)"></span><span class="sc g-zigzag px px1" aria-hidden="true" style="--ink:#F0387A;right:40px;top:70px;width:170px;height:51px;transform:rotate(-5deg)"></span><span class="sc st-r px px1" aria-hidden="true" style="--ink:#F0387A;left:56px;top:-22px;width:190px;height:37px;transform:rotate(-4deg)"></span><span class="sc o px px3" aria-hidden="true" style="--ink:#19D3F3;left:34%;top:84px;width:30px;height:30px"></span><span class="sc semi px px2" aria-hidden="true" style="--ink:#FF7A1A;left:58%;top:70px;width:76px;height:38px;transform:rotate(-10deg)"></span><span class="sc plus px px3" aria-hidden="true" style="--ink:#B9A4FF;left:74%;top:150px;width:36px;height:36px;transform:rotate(12deg)"></span><span class="sc tri px px2" aria-hidden="true" style="--ink:#B6F02E;left:86%;top:60px;width:44px;height:38px;transform:rotate(-14deg)"></span>
 <h2 class="t h2" id="work-h"><span class="hv hv-t k5">Selected work</span><span class="ul" aria-hidden="true"></span></h2>
 <div class="work">
-<span class="sc st-r" aria-hidden="true" style="--ink:#4A1BA6;left:700px;top:4px;width:380px;height:73px;transform:rotate(-5deg)"></span><span class="sc st-c" aria-hidden="true" style="--ink:#1BE07D;left:960px;top:78px;width:250px;height:104px;transform:rotate(8deg)"></span><span class="sc st-r" aria-hidden="true" style="--ink:#F0387A;left:760px;top:92px;width:300px;height:58px;transform:rotate(3deg)"></span><span class="sc st-s" aria-hidden="true" style="--ink:#F0387A;left:400px;top:1346px;width:300px;height:32px;transform:rotate(-2deg)"></span><span class="sc m-t" aria-hidden="true" style="--ink:#FCD400;top:-96px;right:-72px;width:520px;height:150px;transform:rotate(-4deg)"></span><span class="sc m-c" aria-hidden="true" style="--ink:#F0387A;left:-72px;top:800px;width:340px;height:420px;transform:rotate(2deg)"></span><span class="sc m-d dots" aria-hidden="true" style="--ink:#1BE07D;left:46%;top:1300px;width:300px;height:340px;transform:rotate(3deg)"></span><span class="sc m-v" aria-hidden="true" style="--ink:#4A1BA6;right:-80px;bottom:-60px;width:300px;height:440px;transform:rotate(3deg)"></span>
-<a class="card c1" href="#" style="--ink:#7A0A14;--on:#E9E7E1" aria-label="Neve, view case">
+<span class="sc g-brilho fg px px4" aria-hidden="true" style="--ink:#19D3F3;left:786px;top:10px;width:130px;height:130px;transform:rotate(8deg)"></span><span class="sc g-espiral fg px px5" aria-hidden="true" style="--ink:#FF7A1A;left:716px;top:352px;width:150px;height:146px;transform:rotate(-12deg)"></span><span class="sc  fg o px px4" aria-hidden="true" style="--ink:#FCD400;left:884px;top:650px;width:46px;height:46px"></span><span class="sc g-explosao fg px px4" aria-hidden="true" style="--ink:#19D3F3;left:1256px;top:836px;width:150px;height:160px;transform:rotate(10deg)"></span><span class="sc g-coracao fg px px5" aria-hidden="true" style="--ink:#F0387A;left:286px;top:1080px;width:112px;height:97px;transform:rotate(-14deg)"></span><span class="sc g-asterisco fg px px4" aria-hidden="true" style="--ink:#FF7A1A;left:560px;top:1336px;width:100px;height:115px;transform:rotate(14deg)"></span><span class="sc  fg ring px px5" aria-hidden="true" style="--ink:#1BE07D;left:-26px;top:560px;width:92px;height:92px;--bw:9px"></span><span class="sc g-x fg px px5" aria-hidden="true" style="--ink:#4A1BA6;left:596px;top:1640px;width:82px;height:81px;transform:rotate(6deg)"></span><span class="sc g-flor fg px px5" aria-hidden="true" style="--ink:#FF4B1F;left:748px;top:1616px;width:100px;height:150px;transform:rotate(-8deg)"></span><span class="sc g-raios fg px px4" aria-hidden="true" style="--ink:#F0387A;left:866px;top:1946px;width:190px;height:101px;transform:rotate(-4deg)"></span><span class="sc  fg semi px px4" aria-hidden="true" style="--ink:#FCD400;left:1290px;top:1296px;width:84px;height:42px;transform:rotate(-8deg)"></span><span class="sc g-brilho fg mo px px4" aria-hidden="true" style="--ink:#19D3F3;right:-10px;top:14px;width:92px;height:92px;transform:rotate(8deg)"></span><span class="sc g-espiral fg mo px px5" aria-hidden="true" style="--ink:#FF7A1A;left:-12px;top:340px;width:108px;height:105px;transform:rotate(-12deg)"></span><span class="sc g-explosao fg mo px px4" aria-hidden="true" style="--ink:#19D3F3;right:-12px;top:490px;width:106px;height:113px;transform:rotate(10deg)"></span><span class="sc g-coracao fg mo px px5" aria-hidden="true" style="--ink:#F0387A;left:-8px;top:850px;width:80px;height:69px;transform:rotate(-14deg)"></span><span class="sc g-flor fg mo px px5" aria-hidden="true" style="--ink:#FF4B1F;left:-6px;top:1270px;width:66px;height:99px;transform:rotate(-8deg)"></span><span class="sc g-asterisco fg mo px px4" aria-hidden="true" style="--ink:#FF7A1A;right:-8px;top:1640px;width:78px;height:90px;transform:rotate(14deg)"></span><span class="sc  fg mo semi px px4" aria-hidden="true" style="--ink:#FCD400;right:20px;top:1476px;width:60px;height:30px;transform:rotate(-8deg)"></span><span class="sc g-raios fg mo px px4" aria-hidden="true" style="--ink:#F0387A;right:-10px;top:2180px;width:120px;height:64px;transform:rotate(-4deg)"></span><span class="sc g-x fg mo px px5" aria-hidden="true" style="--ink:#4A1BA6;left:-6px;top:2350px;width:60px;height:59px;transform:rotate(6deg)"></span><span class="sc  fg mo ring px px5" aria-hidden="true" style="--ink:#1BE07D;right:-20px;top:760px;width:70px;height:70px;--bw:8px"></span><span class="sc st-r px px2" aria-hidden="true" style="--ink:#4A1BA6;left:900px;top:10px;width:260px;height:50px;transform:rotate(-5deg)"></span><span class="sc st-c px px3" aria-hidden="true" style="--ink:#1BE07D;left:1060px;top:62px;width:180px;height:75px;transform:rotate(8deg)"></span><span class="sc st-r px px1" aria-hidden="true" style="--ink:#F0387A;left:930px;top:112px;width:210px;height:41px;transform:rotate(3deg)"></span><span class="sc o px px3" aria-hidden="true" style="--ink:#FF7A1A;left:1300px;top:34px;width:38px;height:38px"></span><span class="sc ring px px2" aria-hidden="true" style="--ink:#19D3F3;--bw:7px;left:1200px;top:132px;width:56px;height:56px"></span><span class="sc m-t px px1" aria-hidden="true" style="--ink:#FCD400;top:-70px;right:-60px;width:380px;height:110px;transform:rotate(-4deg)"></span><span class="sc m-c px px1" aria-hidden="true" style="--ink:#F0387A;left:-56px;top:830px;width:260px;height:320px;transform:rotate(2deg)"></span><span class="sc m-d dots px px2" aria-hidden="true" style="--ink:#1BE07D;left:46%;top:1300px;width:220px;height:250px;transform:rotate(3deg)"></span><span class="sc m-v px px1" aria-hidden="true" style="--ink:#4A1BA6;right:-60px;bottom:-40px;width:230px;height:340px;transform:rotate(3deg)"></span><span class="sc st-s px px2" aria-hidden="true" style="--ink:#F0387A;left:400px;top:1346px;width:220px;height:24px;transform:rotate(-2deg)"></span><span class="sc tri px px3" aria-hidden="true" style="--ink:#B6F02E;left:90px;top:700px;width:54px;height:48px;transform:rotate(-12deg)"></span><span class="sc plus px px3" aria-hidden="true" style="--ink:#4A1BA6;left:330px;top:1334px;width:40px;height:40px;transform:rotate(10deg)"></span><span class="sc o up px px3" aria-hidden="true" style="--ink:#B6F02E;left:786px;top:168px;width:26px;height:26px"></span><span class="sc plus up px px3" aria-hidden="true" style="--ink:#F0387A;right:26px;top:1284px;width:34px;height:34px;transform:rotate(8deg)"></span><span class="sc o mo px px3" aria-hidden="true" style="--ink:#FCD400;right:-22px;top:150px;width:56px;height:56px"></span><span class="sc ring mo px px2" aria-hidden="true" style="--ink:#F0387A;--bw:8px;left:-26px;top:600px;width:64px;height:64px"></span><span class="sc tri mo px px3" aria-hidden="true" style="--ink:#1BE07D;right:-14px;top:1100px;width:54px;height:48px;transform:rotate(14deg)"></span><span class="sc plus mo px px2" aria-hidden="true" style="--ink:#19D3F3;left:-12px;top:1560px;width:46px;height:46px;transform:rotate(10deg)"></span><span class="sc semi mo px px3" aria-hidden="true" style="--ink:#FF7A1A;right:-10px;top:2050px;width:70px;height:35px;transform:rotate(-8deg)"></span><span class="sc o mo px px2" aria-hidden="true" style="--ink:#B9A4FF;left:-14px;top:2300px;width:40px;height:40px"></span>
+<a class="card c1" href="#" style="--ink:#FF4B1F;--on:#1B1A18" aria-label="Neve, view case">
 <div class="cut m-h"><div class="photo ph p-neve" style="background-position:center 30%"></div><div class="ink"></div><div class="gr"></div><div class="ht"></div></div>
-<div class="txt"><h3 class="t">Neve</h3><p class="meta">Bathrooms that change lives · 2020</p></div>
+<div class="txt"><h3 class="t">Neve</h3></div>
 <span class="go">View case</span>
 </a><a class="card c2" href="#" style="--ink:#4A1BA6;--on:#E9E7E1" aria-label="Desenrola, view case">
 <div class="cut m-v"><div class="photo ph p-desenrola" style="background-position:center"></div><div class="ink"></div><div class="gr"></div><div class="ht"></div></div>
-<div class="txt"><h3 class="t">Desenrola</h3><p class="meta">Client · Agency · Year (to confirm)</p></div>
+<div class="txt"><h3 class="t">Desenrola</h3></div>
 <span class="go">View case</span>
 </a><a class="card c4" href="#" style="--ink:#F0387A;--on:#1B1A18" aria-label="Gloob Anniversary, view case">
 <div class="cut m-c"><div class="photo ph p-gloob" style="background-position:center"></div><div class="ink"></div><div class="gr"></div><div class="ht"></div></div>
-<div class="txt"><h3 class="t">Gloob Anniversary</h3><p class="meta">Gloob · Year (to confirm)</p></div>
+<div class="txt"><h3 class="t">Gloob Anniversary</h3></div>
 <span class="go">View case</span>
 </a><a class="card c3" href="#" style="--ink:#1BE07D;--on:#1B1A18" aria-label="POVA Manifesto, view case">
-<div class="cut m-d"><div class="photo ph p-pova" style="background-position:center"></div><div class="ink"></div><div class="gr"></div><div class="ht"></div></div>
-<div class="txt"><h3 class="t">POVA Manifesto</h3><p class="meta">Client · Agency · Year (to confirm)</p></div>
+<div class="cut m-d"><div class="photo ph p-pova" style="background-position:center"><video class="cv" src="../assets/v1/hero_loop.mp4" muted loop autoplay playsinline preload="metadata" aria-hidden="true"></video></div><div class="ink"></div><div class="gr"></div><div class="ht"></div></div>
+<div class="txt"><h3 class="t">POVA Manifesto</h3></div>
 <span class="go">View case</span>
 </a><a class="card c5" href="#" style="--ink:#FCD400;--on:#1B1A18" aria-label="Social Medias, view case">
 <div class="cut m-t"><div class="photo ph p-social" style="background-position:center 30%"></div><div class="ink"></div><div class="gr"></div><div class="ht"></div></div>
-<div class="txt"><h3 class="t">Social Medias</h3><p class="meta">Client · Agency · Year (to confirm)</p></div>
+<div class="txt"><h3 class="t">Social Medias</h3></div>
 <span class="go">View case</span>
 </a>
 </div>
 </section>
 
 <section class="band toner" aria-label="Frames from the work">
-<span class="sc st-c" aria-hidden="true" style="--ink:#FCD400;left:64%;top:70px;width:340px;height:142px;transform:rotate(-4deg)"></span><span class="sc st-r" aria-hidden="true" style="--ink:#F0387A;left:4%;bottom:36px;width:420px;height:81px;transform:rotate(2deg)"></span><span class="sc m-h" aria-hidden="true" style="--ink:#F0387A;top:-46px;right:10%;width:380px;height:96px;transform:rotate(-1.5deg)"></span><span class="sc m-d dots" aria-hidden="true" style="--ink:#1BE07D;left:34%;bottom:60px;width:380px;height:300px;transform:rotate(-3deg)"></span>
+<span class="sc g-asterisco fg px px4" aria-hidden="true" style="--ink:#FCD400;left:2%;top:300px;width:92px;height:106px;transform:rotate(10deg)"></span><span class="sc g-sol fg px px5" aria-hidden="true" style="--ink:#FF7A1A;right:3%;top:560px;width:150px;height:157px;transform:rotate(-8deg)"></span><span class="sc st-c px px2" aria-hidden="true" style="--ink:#FCD400;left:70%;top:60px;width:240px;height:100px;transform:rotate(-4deg)"></span><span class="sc st-r px px1" aria-hidden="true" style="--ink:#F0387A;left:3%;bottom:30px;width:300px;height:58px;transform:rotate(2deg)"></span><span class="sc m-h px px1" aria-hidden="true" style="--ink:#F0387A;top:-40px;right:8%;width:280px;height:70px;transform:rotate(-1.5deg)"></span><span class="sc m-d dots px px2" aria-hidden="true" style="--ink:#1BE07D;left:38%;bottom:40px;width:260px;height:200px;transform:rotate(-3deg)"></span><span class="sc o px px3" aria-hidden="true" style="--ink:#19D3F3;left:58%;top:150px;width:30px;height:30px"></span><span class="sc tri px px3" aria-hidden="true" style="--ink:#FF7A1A;left:84%;top:240px;width:46px;height:40px;transform:rotate(20deg)"></span><span class="sc plus px px2" aria-hidden="true" style="--ink:#B9A4FF;left:7%;top:70px;width:40px;height:40px;transform:rotate(8deg)"></span>
 <p class="t lead"><span class="hv hv-t k3">Drawn on paper, animated and cut on screen.</span></p>
-<div class="stills" aria-hidden="true"><div class="still s1" style="--ink:#F0387A"><div class="cut m-h"><div class="photo ph p-s1"></div><div class="ink"></div><div class="ht"></div></div></div><div class="still s2" style="--ink:#FCD400"><div class="cut m-c"><div class="photo ph p-s2"></div><div class="ink"></div><div class="ht"></div></div></div><div class="still s3" style="--ink:#1BE07D"><div class="cut m-v"><div class="photo ph p-s3"></div><div class="ink"></div><div class="ht"></div></div></div></div>
+<p class="tag hint">Swipe through the frames</p>
+<div class="reel" aria-hidden="true"><div class="track"><div class="fr" style="--c:0;--r:0"><div class="cut m-h"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr" style="--c:1;--r:0"><div class="cut m-c"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr" style="--c:2;--r:0"><div class="cut m-d"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr" style="--c:3;--r:0"><div class="cut m-t"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr" style="--c:4;--r:0"><div class="cut m-v"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr" style="--c:0;--r:1"><div class="cut m-h"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr" style="--c:1;--r:1"><div class="cut m-c"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr" style="--c:2;--r:1"><div class="cut m-d"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr" style="--c:3;--r:1"><div class="cut m-t"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr" style="--c:4;--r:1"><div class="cut m-v"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr" style="--c:0;--r:2"><div class="cut m-h"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr" style="--c:1;--r:2"><div class="cut m-c"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr" style="--c:2;--r:2"><div class="cut m-d"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr" style="--c:3;--r:2"><div class="cut m-t"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr" style="--c:4;--r:2"><div class="cut m-v"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr dup" style="--c:0;--r:0"><div class="cut m-h"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr dup" style="--c:1;--r:0"><div class="cut m-c"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr dup" style="--c:2;--r:0"><div class="cut m-d"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr dup" style="--c:3;--r:0"><div class="cut m-t"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr dup" style="--c:4;--r:0"><div class="cut m-v"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr dup" style="--c:0;--r:1"><div class="cut m-h"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr dup" style="--c:1;--r:1"><div class="cut m-c"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr dup" style="--c:2;--r:1"><div class="cut m-d"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr dup" style="--c:3;--r:1"><div class="cut m-t"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr dup" style="--c:4;--r:1"><div class="cut m-v"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr dup" style="--c:0;--r:2"><div class="cut m-h"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr dup" style="--c:1;--r:2"><div class="cut m-c"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr dup" style="--c:2;--r:2"><div class="cut m-d"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr dup" style="--c:3;--r:2"><div class="cut m-t"><div class="photo fp"></div><div class="ht"></div></div></div><div class="fr dup" style="--c:4;--r:2"><div class="cut m-v"><div class="photo fp"></div><div class="ht"></div></div></div></div></div>
 </section>
 
 <section class="sec" aria-labelledby="logos-h" style="padding-top:128px">
-<span class="sc st-r ras" aria-hidden="true" style="--ink:#4A1BA6;left:48px;top:6px;width:300px;height:44px;transform:rotate(-2deg)"></span><span class="sc st-r ras" aria-hidden="true" style="--ink:#F0387A;left:60px;top:66px;width:300px;height:44px;transform:rotate(1.5deg);animation-delay:1.8s"></span><span class="sc m-v" aria-hidden="true" style="--ink:#4A1BA6;right:-60px;top:20px;width:240px;height:300px;transform:rotate(4deg)"></span>
+<span class="sc g-ondas px px2" aria-hidden="true" style="--ink:#FF7A1A;right:30%;top:-6px;width:130px;height:48px;transform:rotate(-6deg)"></span><span class="sc g-nuvem px px3" aria-hidden="true" style="--ink:#19D3F3;left:40%;top:-30px;width:110px;height:60px;transform:rotate(4deg)"></span><span class="sc st-r ras" aria-hidden="true" style="--ink:#4A1BA6;left:48px;top:6px;width:240px;height:35px;transform:rotate(-2deg)"></span><span class="sc st-r ras" aria-hidden="true" style="--ink:#F0387A;left:60px;top:62px;width:240px;height:35px;transform:rotate(1.5deg);animation-delay:1.8s"></span><span class="sc m-v px px1" aria-hidden="true" style="--ink:#4A1BA6;right:-50px;top:20px;width:190px;height:240px;transform:rotate(4deg)"></span><span class="sc o px px3" aria-hidden="true" style="--ink:#FF7A1A;right:22%;top:26px;width:34px;height:34px"></span><span class="sc ring px px2" aria-hidden="true" style="--ink:#B9A4FF;--bw:6px;left:48%;top:44px;width:52px;height:52px"></span><span class="sc plus px px3" aria-hidden="true" style="--ink:#19D3F3;right:12%;top:238px;width:38px;height:38px;transform:rotate(8deg)"></span><span class="sc semi px px2" aria-hidden="true" style="--ink:#B6F02E;left:56%;top:18px;width:70px;height:35px;transform:rotate(12deg)"></span>
 <h2 class="t h2" id="logos-h"><span class="hv hv-t k4">Brands and agencies</span></h2>
 <div class="logos"><div class="logo hv k4">Carrefour</div><div class="logo hv k5">Ajinomoto</div><div class="logo hv k3">Blowtex</div><div class="logo hv k2">Universal</div><div class="logo hv k1">Globo</div><div class="logo hv k3 tilt">Samsung</div><div class="logo hv k4">Jack Daniel’s</div><div class="logo hv k1">Neve</div><div class="logo hv k5">Gloob</div><div class="logo hv k2 ag">Cappuccino</div></div>
 <p class="note">Placeholder wordmarks. Final logos go in as grayscale cutouts.</p>
 </section>
 
 <section class="sec" aria-labelledby="quotes-h">
-<span class="sc st-r" aria-hidden="true" style="--ink:#4A1BA6;left:690px;top:138px;width:360px;height:69px;transform:rotate(-3deg)"></span><span class="sc m-d" aria-hidden="true" style="--ink:#F0387A;right:-60px;top:160px;width:440px;height:400px;transform:rotate(-3deg)"></span><span class="sc m-c dots" aria-hidden="true" style="--ink:#1BE07D;left:-80px;top:90px;width:260px;height:300px;transform:rotate(3deg)"></span>
+<span class="sc g-estrela px px3" aria-hidden="true" style="--ink:#F0387A;left:50%;top:30px;width:64px;height:64px;transform:rotate(-10deg)"></span><span class="sc g-flor px px2" aria-hidden="true" style="--ink:#F0387A;right:3%;top:400px;width:64px;height:96px;transform:rotate(10deg)"></span><span class="sc ring px px2" aria-hidden="true" style="--ink:#4A1BA6;--bw:7px;right:12%;top:36px;width:70px;height:70px"></span><span class="sc m-d px px1" aria-hidden="true" style="--ink:#F0387A;right:-40px;top:170px;width:320px;height:300px;transform:rotate(-3deg)"></span><span class="sc m-c dots px px2" aria-hidden="true" style="--ink:#1BE07D;left:-70px;top:110px;width:190px;height:220px;transform:rotate(3deg)"></span><span class="sc o px px3" aria-hidden="true" style="--ink:#19D3F3;left:74%;top:70px;width:44px;height:44px"></span><span class="sc plus px px3" aria-hidden="true" style="--ink:#B6F02E;left:70%;top:540px;width:38px;height:38px;transform:rotate(12deg)"></span><span class="sc semi px px2" aria-hidden="true" style="--ink:#FCD400;left:42%;top:40px;width:70px;height:35px;transform:rotate(-8deg)"></span>
 <h2 class="t h2" id="quotes-h"><span class="hv hv-t k3">Word from clients</span></h2>
 <div class="quotes">
 <figure class="quote hv k4 tilt"><blockquote>Client quote goes here, in two or three lines. Case interviews are scheduled, and the real words replace this.</blockquote><figcaption><b>Client name</b>Role, Company</figcaption></figure>
@@ -236,14 +262,14 @@ body{margin:0;background:var(--papel)}
 </section>
 
 <section class="cta" aria-labelledby="cta-h">
-<span class="sc st-r" aria-hidden="true" style="--ink:#1BE07D;left:54%;top:610px;width:420px;height:80px;transform:rotate(4deg)"></span><span class="sc m-t" aria-hidden="true" style="--ink:#4A1BA6;left:-60px;bottom:-10px;width:560px;height:150px;transform:rotate(2deg)"></span><span class="sc m-c dots" aria-hidden="true" style="--ink:#F0387A;right:-40px;top:120px;width:460px;height:420px;transform:rotate(-2deg)"></span><span class="sc m-v" aria-hidden="true" style="--ink:#FCD400;right:14%;bottom:40px;width:200px;height:300px;transform:rotate(5deg)"></span>
+<span class="sc g-explosao px px2" aria-hidden="true" style="--ink:#19D3F3;left:5%;top:60px;width:110px;height:117px;transform:rotate(-8deg)"></span><span class="sc g-brilho px px3" aria-hidden="true" style="--ink:#4A1BA6;left:44%;top:120px;width:96px;height:96px;transform:rotate(6deg)"></span><span class="sc ring px px2" aria-hidden="true" style="--ink:#1BE07D;--bw:9px;left:54%;top:610px;width:76px;height:76px"></span><span class="sc o px px3" aria-hidden="true" style="--ink:#19D3F3;left:62%;top:560px;width:34px;height:34px"></span><span class="sc m-t px px1" aria-hidden="true" style="--ink:#4A1BA6;left:-50px;bottom:-10px;width:380px;height:105px;transform:rotate(2deg)"></span><span class="sc m-c dots px px1" aria-hidden="true" style="--ink:#F0387A;right:-30px;top:110px;width:340px;height:310px;transform:rotate(-2deg)"></span><span class="sc m-v px px2" aria-hidden="true" style="--ink:#FCD400;right:16%;bottom:50px;width:150px;height:225px;transform:rotate(5deg)"></span><span class="sc tri px px3" aria-hidden="true" style="--ink:#B9A4FF;left:46%;bottom:110px;width:52px;height:46px;transform:rotate(-10deg)"></span><span class="sc plus px px3" aria-hidden="true" style="--ink:#FF7A1A;right:7%;bottom:34px;width:46px;height:46px;transform:rotate(10deg)"></span>
 <h2 class="t big" id="cta-h"><span class="hv hv-t k2">Got a brief?<br>Send it over.</span></h2>
 <div class="row"><span class="circ"><a class="btn k3" href="mailto:romana.olha@gmail.com?subject=Project%20inquiry%20%E2%80%94%20romanaig.com">Get a quote</a></span><span class="tag hv k1">Remote&nbsp;·&nbsp;GMT-3</span></div>
 </section>
 </main>
 
 <footer class="toner foot">
-<span class="sc m-h" aria-hidden="true" style="--ink:#1BE07D;top:-40px;left:6%;width:48%;height:80px;transform:rotate(-1deg)"></span>
+<span class="sc g-coracao px px2" aria-hidden="true" style="--ink:#F0387A;right:12%;top:-22px;width:72px;height:62px;transform:rotate(8deg)"></span><span class="sc m-h px px1" aria-hidden="true" style="--ink:#1BE07D;top:-40px;left:6%;width:34%;height:60px;transform:rotate(-1deg)"></span><span class="sc o px px3" aria-hidden="true" style="--ink:#F0387A;right:6%;top:30px;width:30px;height:30px"></span><span class="sc plus px px2" aria-hidden="true" style="--ink:#19D3F3;right:30%;top:20px;width:34px;height:34px;transform:rotate(8deg)"></span><span class="sc semi px px2" aria-hidden="true" style="--ink:#FF7A1A;right:24%;top:-14px;width:60px;height:30px;transform:rotate(-6deg)"></span>
 <div>
 <a class="mail hv hv-t k5" href="mailto:romana.olha@gmail.com">romana.olha@gmail.com</a>
 <ul style="margin-top:24px">
