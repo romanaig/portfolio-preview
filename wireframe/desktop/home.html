@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><style>x-dc{display:block}html,body{margin:0}</style>
+<title>Home wireframe, desktop</title>
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&amp;family=Courier+Prime:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1B1A18}a:hover{color:#5C5A55}
+</style>
+</helmet>
+<div style="background:#E9E7E1;color:#1B1A18;font-family:'Courier Prime','Courier New',monospace;font-size:17px;line-height:1.6;box-sizing:border-box">
+
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:20px 48px;border-bottom:2px solid #1B1A18">
+<div style="font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:40px;line-height:.95;text-transform:uppercase">Igor Romana</div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:32px;font-size:17px">
+<a href="Main.dc.html" style="text-decoration:underline">Work</a>
+<a href="About.dc.html" style="text-decoration:none">About</a>
+<span style="color:#5C5A55">EN / PT</span>
+<a href="mailto:romana.olha@gmail.com?subject=Project%20inquiry%20%E2%80%94%20romanaig.com" style="display:inline-flex;align-items:center;min-height:48px;box-sizing:border-box;padding:12px 24px;background:#1B1A18;color:#E9E7E1;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:22px;letter-spacing:.02em;text-transform:uppercase;text-decoration:none">Get a quote</a>
+</div>
+</div>
+
+<div style="position:relative;height:900px;box-sizing:border-box;padding:48px;display:flex;flex-direction:column;justify-content:space-between;color:#E9E7E1;background:linear-gradient(118deg,#FBFAF7 0,#FBFAF7 16%,transparent 16.2%),linear-gradient(to top right,transparent calc(50% - 1.5px),#E9E7E1 50%,transparent calc(50% + 1.5px)),linear-gradient(to bottom right,transparent calc(50% - 1.5px),#E9E7E1 50%,transparent calc(50% + 1.5px)),#1B1A18">
+<div style="align-self:flex-end;background:#FBFAF7;color:#1B1A18;border:1px dashed #5C5A55;padding:8px 12px;font-size:13px;max-width:440px">Hero: reel loop, muted, about 10 s, under 3 MB. Black and white, blown highlights, sharp. No dark overlay, no blur.</div>
+<div>
+<h1 style="margin:0;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:259px;line-height:.82;letter-spacing:-.01em;text-transform:uppercase">Igor Romana</h1>
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;margin-top:32px">
+<div style="font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:71px;line-height:.9;text-transform:uppercase">Animator &amp; Editor</div>
+<div style="display:flex;align-items:center;gap:16px">
+<a href="https://vimeo.com/994845659" aria-label="Play reel on Vimeo, with sound" style="display:inline-flex;align-items:center;justify-content:center;width:96px;height:96px;border:3px solid #E9E7E1;border-radius:50%;text-decoration:none">
+<svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M9 5 L27 16 L9 27 Z" fill="#E9E7E1"/></svg>
+</a>
+<div style="font-size:15px;max-width:220px;line-height:1.4">Play reel. Opens Vimeo with sound. Hand-drawn circle goes here.</div>
+</div>
+</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+<div style="background:#FBFAF7;color:#1B1A18;border:2px solid #1B1A18;padding:8px 16px;font-size:15px">Remote · GMT-3</div>
+<a href="mailto:romana.olha@gmail.com?subject=Project%20inquiry%20%E2%80%94%20romanaig.com" style="display:inline-flex;align-items:center;min-height:56px;box-sizing:border-box;padding:12px 32px;background:#E9E7E1;color:#1B1A18;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:28px;letter-spacing:.02em;text-transform:uppercase;text-decoration:none">Get a quote</a>
+</div>
+</div>
+
+<div style="padding:96px 0 0;box-sizing:border-box">
+<div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;margin:0 48px 48px">
+<h2 style="margin:0;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:71px;line-height:.9;text-transform:uppercase">Selected work</h2>
+<div style="border:1px dashed #5C5A55;padding:8px 12px;font-size:13px;color:#5C5A55;max-width:520px">Photos are the page. Each one is blown out: high contrast, sharp, torn edge, running past the margin and overlapping the next. Title sits on the photo. Hover or focus prints the case ink (multiply, 2 frames).</div>
+</div>
+<div style="display:flex;flex-direction:column;overflow:hidden;padding-bottom:8px">
+<sc-for list="{{cards}}" as="c" hint-placeholder-count="5">
+<a href="Case.dc.html" style="{{c.box}};display:block;text-decoration:none;color:#E9E7E1">
+<div style="height:{{c.h}}px;position:relative">
+<div style="position:absolute;top:0;right:0;bottom:0;left:0;transform:{{c.tilt}};background:linear-gradient(118deg,#FBFAF7 0,#FBFAF7 14%,transparent 14.2%),linear-gradient(to top right,transparent calc(50% - 1.5px),#E9E7E1 50%,transparent calc(50% + 1.5px)),linear-gradient(to bottom right,transparent calc(50% - 1.5px),#E9E7E1 50%,transparent calc(50% + 1.5px)),#1B1A18"></div>
+<span style="position:absolute;top:16px;right:16px;background:#FBFAF7;color:#5C5A55;padding:4px 8px;font-size:13px">Photo, torn edge: {{c.tear}}</span>
+<div style="position:absolute;left:32px;top:24px;right:32px">
+<div style="font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;text-transform:uppercase;font-size:126px;line-height:.86">{{c.name}}</div>
+<div style="font-size:15px;margin-top:12px">{{c.meta}}</div>
+</div>
+</div>
+</a>
+</sc-for>
+</div>
+</div>
+
+<div style="margin-top:96px">
+<div style="display:flex;flex-wrap:wrap;gap:0">
+<sc-for list="{{stills}}" as="s" hint-placeholder-count="3">
+<div style="flex:1 1 320px;height:460px;position:relative;box-sizing:border-box;padding:16px;background:linear-gradient(118deg,#FBFAF7 0,#FBFAF7 12%,transparent 12.2%),linear-gradient(to top right,transparent calc(50% - 1.5px),#E9E7E1 50%,transparent calc(50% + 1.5px)),linear-gradient(to bottom right,transparent calc(50% - 1.5px),#E9E7E1 50%,transparent calc(50% + 1.5px)),#1B1A18">
+<span style="background:#FBFAF7;color:#5C5A55;padding:4px 8px;font-size:13px">{{s.cap}}</span>
+</div>
+</sc-for>
+</div>
+<div style="font-size:13px;color:#5C5A55;margin:12px 48px 0">Strip of three stills, edge to edge, no gaps. Frames from the reel, same treatment.</div>
+</div>
+
+<div style="max-width:1680px;margin:0 auto;padding:128px 48px 0;box-sizing:border-box">
+<h2 style="margin:0 0 32px;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:40px;line-height:.95;text-transform:uppercase">Brands and agencies</h2>
+<div style="display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:24px">
+<sc-for list="{{logos}}" as="l" hint-placeholder-count="6">
+<div style="background:#FBFAF7;border:1px solid #1B1A18;box-shadow:3px 4px 0 rgba(27,26,24,.22);padding:24px 16px;min-height:120px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;font-size:15px">
+<div style="font-weight:700">{{l.brand}}</div>
+<div style="font-size:13px;color:#5C5A55">via [agency]</div>
+</div>
+</sc-for>
+</div>
+<div style="font-size:13px;color:#5C5A55;margin-top:16px">Each logo shows the brand and the agency. Empty agency means a direct job. Lists come from the case interviews (Nov 11 and 12).</div>
+</div>
+
+<div style="max-width:1680px;margin:0 auto;padding:128px 48px 0;box-sizing:border-box">
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px">
+<sc-for list="{{quotes}}" as="q" hint-placeholder-count="2">
+<div style="background:#FBFAF7;border:1px solid #1B1A18;box-shadow:3px 4px 0 rgba(27,26,24,.22);padding:32px;box-sizing:border-box;min-height:240px;display:flex;flex-direction:column;justify-content:space-between">
+<div style="font-size:22px;line-height:1.45">[Testimonial, one or two short sentences]</div>
+<div style="font-size:15px;color:#5C5A55">[Name], [role], [company / agency]</div>
+</div>
+</sc-for>
+</div>
+</div>
+
+<div style="padding:192px 48px 128px;box-sizing:border-box;text-align:left;max-width:1680px;margin:0 auto">
+<h2 style="margin:0;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:126px;line-height:.86;text-transform:uppercase;max-width:900px">Have a film to make?</h2>
+<div style="margin-top:32px"><a href="mailto:romana.olha@gmail.com?subject=Project%20inquiry%20%E2%80%94%20romanaig.com" style="display:inline-flex;align-items:center;min-height:64px;box-sizing:border-box;padding:12px 40px;background:#1B1A18;color:#E9E7E1;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:32px;letter-spacing:.02em;text-transform:uppercase;text-decoration:none">Get a quote</a></div>
+<div style="font-size:13px;color:#5C5A55;margin-top:16px;max-width:560px">Opens an email with the subject filled in and fields for name, company, deadline, budget and link. No price on the site.</div>
+</div>
+
+<div style="border-top:2px solid #1B1A18;padding:48px;box-sizing:border-box">
+<div style="max-width:1584px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:32px">
+<div style="font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:40px;line-height:.95;text-transform:uppercase">Igor Romana<br>Animator &amp; Editor</div>
+<div style="display:flex;flex-wrap:wrap;gap:12px 32px;max-width:640px">
+<a href="mailto:romana.olha@gmail.com">Email</a>
+<a href="https://www.linkedin.com/in/igor-romana/">LinkedIn</a>
+<a href="https://www.behance.net/igor_romana">Behance</a>
+<a href="https://vimeo.com/igorromana">Vimeo</a>
+<a href="https://www.instagram.com/romanaig">Instagram</a>
+<a href="https://romanaig.substack.com/">Substack</a>
+</div>
+<div style="font-size:13px;color:#5C5A55;text-align:right">Instagram and Substack are plain links, no feed.<br><a href="https://linktr.ee/romanaig" style="color:#5C5A55">Linktree</a> · © 2026 romanaig.com</div>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":7400}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+cards: [
+{ name: 'Neve', meta: 'Bathrooms that change lives · 2020', tear: 'horizontal', h: 920, box: 'width:100%', tilt: 'none' },
+{ name: 'Desenrola', meta: '[client · agency · year]', tear: 'vertical', h: 760, box: 'width:72%;margin:-120px 0 0 auto;position:relative;z-index:2', tilt: 'none' },
+{ name: 'POVA Manifesto', meta: '[client · agency · year]', tear: 'diagonal', h: 720, box: 'width:64%;margin:56px 0 0 0', tilt: 'none' },
+{ name: 'Gloob Anniversary', meta: '[client · agency · year]', tear: 'corner', h: 760, box: 'width:78%;margin:-96px 0 0 auto;position:relative;z-index:2', tilt: 'rotate(-1.5deg)' },
+{ name: 'Social Medias', meta: 'Universal, Minions, Blowtex', tear: 'strip', h: 560, box: 'width:100%;margin:56px 0 0 0', tilt: 'none' }
+],
+stills: [{ cap: 'Still 1, [from reel]' }, { cap: 'Still 2, [from reel]' }, { cap: 'Still 3, [from reel]' }],
+logos: [
+{ brand: 'Universal' }, { brand: 'Neve' }, { brand: 'Gloob' }, { brand: 'POVA' }, { brand: 'Blowtex' }, { brand: '[brand]' }
+],
+quotes: [{ id: 1 }, { id: 2 }]
+};
+}
+}
+</script>
+</body>
+</html>

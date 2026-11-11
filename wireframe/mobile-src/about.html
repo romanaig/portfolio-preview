@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><style>x-dc{display:block}html,body{margin:0}</style>
+<title>About wireframe, mobile</title>
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&amp;family=Courier+Prime:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1B1A18}a:hover{color:#5C5A55}
+</style>
+</helmet>
+<div style="background:#E9E7E1;color:#1B1A18;font-family:'Courier Prime','Courier New',monospace;font-size:17px;line-height:1.6;box-sizing:border-box">
+
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 24px;border-bottom:2px solid #1B1A18">
+<a href="HomeMobile.dc.html" style="font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:28px;line-height:.95;text-transform:uppercase;text-decoration:none">Igor Romana</a>
+<button type="button" style="min-height:44px;padding:8px 16px;border:2px solid #1B1A18;background:#E9E7E1;color:#1B1A18;font-family:'Courier Prime','Courier New',monospace;font-size:15px">Menu</button>
+</div>
+
+<div style="padding:48px 24px 0;box-sizing:border-box">
+<h1 style="margin:0;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:96px;line-height:.86;text-transform:uppercase">About</h1>
+<div style="height:380px;margin-top:24px;box-sizing:border-box;padding:8px;font-size:13px;color:#5C5A55;background:linear-gradient(to top right,transparent calc(50% - 1px),#8A877F 50%,transparent calc(50% + 1px)),linear-gradient(to bottom right,transparent calc(50% - 1px),#8A877F 50%,transparent calc(50% + 1px)),#CFCCC4">Portrait, black and white, torn edge</div>
+<div style="margin-top:24px;font-size:20px;line-height:1.45">[Lead: who Igor is and what he makes.]</div>
+<div style="margin-top:16px">[Bio, two or three short paragraphs.]</div>
+<div style="display:flex;flex-direction:column;gap:12px;margin-top:32px">
+<a href="HomeMobile.dc.html" style="display:inline-flex;align-items:center;justify-content:center;min-height:48px;box-sizing:border-box;padding:12px 24px;border:2px solid #1B1A18;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:22px;letter-spacing:.02em;text-transform:uppercase;text-decoration:none">Download CV (EN)</a>
+<a href="HomeMobile.dc.html" style="display:inline-flex;align-items:center;justify-content:center;min-height:48px;box-sizing:border-box;padding:12px 24px;border:2px solid #1B1A18;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:22px;letter-spacing:.02em;text-transform:uppercase;text-decoration:none">Download CV (PT)</a>
+</div>
+</div>
+
+<div style="padding:80px 24px 0;box-sizing:border-box">
+<h2 style="margin:0 0 24px;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:56px;line-height:.9;text-transform:uppercase">Trajectory</h2>
+<div style="border-top:2px solid #1B1A18">
+<sc-for list="{{rows}}" as="r" hint-placeholder-count="5">
+<div style="padding:16px 0;border-bottom:1px solid #1B1A18">
+<div style="color:#5C5A55;font-size:15px">{{r.when}}</div>
+<div style="font-weight:700">{{r.role}}</div>
+<div style="font-size:15px">{{r.what}}</div>
+</div>
+</sc-for>
+</div>
+</div>
+
+<div style="padding:80px 24px 0;box-sizing:border-box">
+<div style="background:#FBFAF7;border:1px solid #1B1A18;box-shadow:3px 4px 0 rgba(27,26,24,.22);padding:24px;box-sizing:border-box">
+<div style="font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:40px;line-height:.95;text-transform:uppercase;margin-bottom:12px">Contact</div>
+<div style="display:flex;flex-direction:column;gap:8px;font-size:15px">
+<a href="mailto:romana.olha@gmail.com">Email</a><a href="https://www.linkedin.com/in/igor-romana/">LinkedIn</a><a href="https://www.behance.net/igor_romana">Behance</a><a href="https://vimeo.com/igorromana">Vimeo</a><a href="https://www.instagram.com/romanaig">Instagram</a><a href="https://romanaig.substack.com/">Substack</a>
+</div>
+</div>
+<div style="margin-top:32px"><a href="mailto:romana.olha@gmail.com?subject=Project%20inquiry%20%E2%80%94%20romanaig.com" style="display:inline-flex;align-items:center;min-height:56px;box-sizing:border-box;padding:12px 32px;background:#1B1A18;color:#E9E7E1;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:28px;letter-spacing:.02em;text-transform:uppercase;text-decoration:none">Get a quote</a></div>
+</div>
+
+<div style="margin-top:64px;border-top:2px solid #1B1A18;padding:24px;box-sizing:border-box;font-size:13px;color:#5C5A55"><a href="https://linktr.ee/romanaig" style="color:#5C5A55">Linktree</a> · © 2026 romanaig.com</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":2500}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+rows: [
+{ when: '[years]', role: '[role]', what: '[studio / company]' },
+{ when: '[years]', role: '[role]', what: '[studio / company]' },
+{ when: '[years]', role: '[role]', what: '[studio / company]' },
+{ when: '[years]', role: '[role]', what: '[studio / company]' },
+{ when: '[years]', role: '[education or tools]', what: '[one line]' }
+]
+};
+}
+}
+</script>
+</body>
+</html>

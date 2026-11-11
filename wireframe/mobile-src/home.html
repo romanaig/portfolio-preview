@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><style>x-dc{display:block}html,body{margin:0}</style>
+<title>Home wireframe, mobile</title>
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&amp;family=Courier+Prime:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1B1A18}a:hover{color:#5C5A55}
+</style>
+</helmet>
+<div style="background:#E9E7E1;color:#1B1A18;font-family:'Courier Prime','Courier New',monospace;font-size:17px;line-height:1.6;box-sizing:border-box">
+
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 24px;border-bottom:2px solid #1B1A18">
+<div style="font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:28px;line-height:.95;text-transform:uppercase">Igor Romana</div>
+<button type="button" style="min-height:44px;padding:8px 16px;border:2px solid #1B1A18;background:#E9E7E1;color:#1B1A18;font-family:'Courier Prime','Courier New',monospace;font-size:15px">Menu</button>
+</div>
+
+<div style="height:680px;box-sizing:border-box;padding:24px;display:flex;flex-direction:column;justify-content:space-between;color:#E9E7E1;background:linear-gradient(118deg,#FBFAF7 0,#FBFAF7 16%,transparent 16.2%),linear-gradient(to top right,transparent calc(50% - 1.5px),#E9E7E1 50%,transparent calc(50% + 1.5px)),linear-gradient(to bottom right,transparent calc(50% - 1.5px),#E9E7E1 50%,transparent calc(50% + 1.5px)),#1B1A18">
+<div style="align-self:flex-end;background:#FBFAF7;color:#5C5A55;border:1px dashed #5C5A55;padding:6px 10px;font-size:13px">Reel loop, muted. Sharp, high contrast. Poster on slow networks.</div>
+<div>
+<h1 style="margin:0;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:110px;line-height:.8;text-transform:uppercase">Igor Romana</h1>
+<div style="font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:40px;line-height:.95;text-transform:uppercase;margin-top:16px">Animator &amp; Editor</div>
+<div style="display:flex;align-items:center;gap:12px;margin-top:24px">
+<a href="https://vimeo.com/994845659" aria-label="Play reel on Vimeo, with sound" style="display:inline-flex;align-items:center;justify-content:center;width:64px;height:64px;border:3px solid #E9E7E1;border-radius:50%;text-decoration:none">
+<svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><path d="M9 5 L27 16 L9 27 Z" fill="#E9E7E1"/></svg>
+</a>
+<span style="font-size:15px">Play reel</span>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start">
+<div style="background:#FBFAF7;color:#1B1A18;border:2px solid #1B1A18;padding:6px 12px;font-size:15px">Remote · GMT-3</div>
+<a href="mailto:romana.olha@gmail.com?subject=Project%20inquiry%20%E2%80%94%20romanaig.com" style="display:inline-flex;align-items:center;min-height:52px;box-sizing:border-box;padding:12px 28px;background:#E9E7E1;color:#1B1A18;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:26px;letter-spacing:.02em;text-transform:uppercase;text-decoration:none">Get a quote</a>
+</div>
+</div>
+
+<div style="padding:96px 0 0;box-sizing:border-box">
+<h2 style="margin:0 24px 24px;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:56px;line-height:.9;text-transform:uppercase">Selected work</h2>
+<div style="display:flex;flex-direction:column;overflow:hidden;padding-bottom:8px">
+<sc-for list="{{cards}}" as="c" hint-placeholder-count="5">
+<a href="CaseMobile.dc.html" style="{{c.box}};display:block;text-decoration:none;color:#E9E7E1">
+<div style="height:{{c.h}}px;position:relative">
+<div style="position:absolute;top:0;right:0;bottom:0;left:0;transform:{{c.tilt}};background:linear-gradient(118deg,#FBFAF7 0,#FBFAF7 14%,transparent 14.2%),linear-gradient(to top right,transparent calc(50% - 1.5px),#E9E7E1 50%,transparent calc(50% + 1.5px)),linear-gradient(to bottom right,transparent calc(50% - 1.5px),#E9E7E1 50%,transparent calc(50% + 1.5px)),#1B1A18"></div>
+<span style="position:absolute;top:12px;right:12px;background:#FBFAF7;color:#5C5A55;padding:4px 8px;font-size:13px">Photo, torn edge: {{c.tear}}</span>
+<div style="position:absolute;left:16px;top:16px;right:16px">
+<div style="font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;text-transform:uppercase;font-size:72px;line-height:.86">{{c.name}}</div>
+<div style="font-size:15px;margin-top:12px">{{c.meta}}</div>
+</div>
+</div>
+</a>
+</sc-for>
+</div>
+<div style="font-size:13px;color:#5C5A55;margin:24px 24px 0;border:1px dashed #5C5A55;padding:8px 12px">Photos bleed off the screen edge and overlap. No hover on touch: the case ink prints on tap, before the page opens.</div>
+</div>
+
+<div style="margin-top:64px">
+<div style="display:flex;overflow-x:auto;gap:0">
+<sc-for list="{{stills}}" as="s" hint-placeholder-count="3">
+<div style="flex:none;width:300px;height:400px;box-sizing:border-box;padding:12px;background:linear-gradient(118deg,#FBFAF7 0,#FBFAF7 12%,transparent 12.2%),linear-gradient(to top right,transparent calc(50% - 1.5px),#E9E7E1 50%,transparent calc(50% + 1.5px)),linear-gradient(to bottom right,transparent calc(50% - 1.5px),#E9E7E1 50%,transparent calc(50% + 1.5px)),#1B1A18">
+<span style="background:#FBFAF7;color:#5C5A55;padding:4px 8px;font-size:13px">{{s.cap}}</span>
+</div>
+</sc-for>
+</div>
+<div style="font-size:13px;color:#5C5A55;margin:8px 24px 0">Strip of stills, scrolls sideways.</div>
+</div>
+
+<div style="padding:96px 24px 0;box-sizing:border-box">
+<h2 style="margin:0 0 24px;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:40px;line-height:.95;text-transform:uppercase">Brands and agencies</h2>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px">
+<sc-for list="{{logos}}" as="l" hint-placeholder-count="6">
+<div style="background:#FBFAF7;border:1px solid #1B1A18;box-shadow:3px 4px 0 rgba(27,26,24,.22);min-height:96px;box-sizing:border-box;padding:12px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;font-size:15px">
+<div style="font-weight:700">{{l.brand}}</div>
+<div style="font-size:13px;color:#5C5A55">via [agency]</div>
+</div>
+</sc-for>
+</div>
+</div>
+
+<div style="padding:96px 24px 0;box-sizing:border-box;display:flex;flex-direction:column;gap:24px">
+<sc-for list="{{quotes}}" as="q" hint-placeholder-count="2">
+<div style="background:#FBFAF7;border:1px solid #1B1A18;box-shadow:3px 4px 0 rgba(27,26,24,.22);padding:16px;box-sizing:border-box;min-height:180px;display:flex;flex-direction:column;justify-content:space-between">
+<div style="font-size:17px">[Testimonial, one or two short sentences]</div>
+<div style="font-size:15px;color:#5C5A55">[Name], [role], [company]</div>
+</div>
+</sc-for>
+</div>
+
+<div style="padding:96px 24px 64px;box-sizing:border-box">
+<h2 style="margin:0;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:72px;line-height:.86;text-transform:uppercase">Have a film to make?</h2>
+<div style="margin-top:24px"><a href="mailto:romana.olha@gmail.com?subject=Project%20inquiry%20%E2%80%94%20romanaig.com" style="display:inline-flex;align-items:center;min-height:56px;box-sizing:border-box;padding:12px 32px;background:#1B1A18;color:#E9E7E1;font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;font-weight:900;font-size:28px;letter-spacing:.02em;text-transform:uppercase;text-decoration:none">Get a quote</a></div>
+</div>
+
+<div style="border-top:2px solid #1B1A18;padding:32px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:12px">
+<a href="mailto:romana.olha@gmail.com">Email</a><a href="https://www.linkedin.com/in/igor-romana/">LinkedIn</a><a href="https://www.behance.net/igor_romana">Behance</a><a href="https://vimeo.com/igorromana">Vimeo</a><a href="https://www.instagram.com/romanaig">Instagram</a><a href="https://romanaig.substack.com/">Substack</a>
+<div style="font-size:13px;color:#5C5A55;margin-top:12px"><a href="https://linktr.ee/romanaig" style="color:#5C5A55">Linktree</a> · EN / PT · © 2026 romanaig.com</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":5800}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+cards: [
+{ name: 'Neve', meta: 'Bathrooms that change lives · 2020', tear: 'horizontal', h: 560, box: 'width:100%', tilt: 'none' },
+{ name: 'Desenrola', meta: '[client · agency · year]', tear: 'vertical', h: 520, box: 'width:90%;margin:-40px 0 0 auto;position:relative;z-index:2', tilt: 'none' },
+{ name: 'POVA Manifesto', meta: '[client · agency · year]', tear: 'diagonal', h: 520, box: 'width:90%;margin:32px 0 0 0', tilt: 'none' },
+{ name: 'Gloob Anniversary', meta: '[client · agency · year]', tear: 'corner', h: 520, box: 'width:92%;margin:-40px 0 0 auto;position:relative;z-index:2', tilt: 'rotate(-1.5deg)' },
+{ name: 'Social Medias', meta: 'Universal, Minions, Blowtex', tear: 'strip', h: 440, box: 'width:100%;margin:32px 0 0 0', tilt: 'none' }
+],
+stills: [{ cap: 'Still 1' }, { cap: 'Still 2' }, { cap: 'Still 3' }],
+logos: [{ brand: 'Universal' }, { brand: 'Neve' }, { brand: 'Gloob' }, { brand: 'POVA' }, { brand: 'Blowtex' }, { brand: '[brand]' }],
+quotes: [{ id: 1 }, { id: 2 }]
+};
+}
+}
+</script>
+</body>
+</html>
